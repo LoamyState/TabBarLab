@@ -1,24 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qJJ-2O-ESY">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--About Me-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hswebsite" translatesAutoresizingMaskIntoConstraints="NO" id="BQ5-dp-1lw">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="my name is Jane &amp; i like video games" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6f-ci-OQB">
+                                <rect key="frame" x="27" y="405" width="277" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="Mdv-h8-7Ia"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="27"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="i live in a basement and deliver pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8X-KM-b13">
+                                <rect key="frame" x="62" y="518" width="269" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="18"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S6f-ci-OQB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="I2z-kc-hau"/>
+                            <constraint firstItem="S6f-ci-OQB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="346" id="K7u-XH-Oav"/>
+                            <constraint firstItem="BQ5-dp-1lw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KUJ-VO-BIJ"/>
+                            <constraint firstAttribute="bottom" secondItem="BQ5-dp-1lw" secondAttribute="bottom" id="L8E-Oq-Tec"/>
+                            <constraint firstItem="D8X-KM-b13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="NDM-DA-yCs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S6f-ci-OQB" secondAttribute="trailing" constant="89" id="TLD-GR-YQK"/>
+                            <constraint firstItem="BQ5-dp-1lw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eAz-Ja-68a"/>
+                            <constraint firstItem="D8X-KM-b13" firstAttribute="top" secondItem="S6f-ci-OQB" secondAttribute="bottom" constant="30" id="net-9Q-beu"/>
+                            <constraint firstItem="D8X-KM-b13" firstAttribute="centerX" secondItem="BQ5-dp-1lw" secondAttribute="centerX" id="q1V-qZ-8cv"/>
+                            <constraint firstItem="BQ5-dp-1lw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="59" id="ySm-Ix-2vA"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="About Me" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="xDl-LJ-taa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="988.54961832061065" y="4.9295774647887329"/>
+        </scene>
+        <!--Fave Movie-->
+        <scene sceneID="Wux-Xv-lR6">
+            <objects>
+                <viewController id="Yrr-HL-tzS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXJ-be-Wky">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Strong_Bads_Website" translatesAutoresizingMaskIntoConstraints="NO" id="EvT-Mu-TnG">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My favorite movieis pirates of carribean" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCc-8S-TmG">
+                                <rect key="frame" x="51" y="488" width="291" height="76"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="25"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0AR-Ju-onr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yCc-8S-TmG" firstAttribute="centerX" secondItem="EvT-Mu-TnG" secondAttribute="centerX" id="2Xe-6K-NWO"/>
+                            <constraint firstItem="EvT-Mu-TnG" firstAttribute="top" secondItem="gXJ-be-Wky" secondAttribute="topMargin" id="4Sf-CN-OQU"/>
+                            <constraint firstItem="yCc-8S-TmG" firstAttribute="top" secondItem="0AR-Ju-onr" secondAttribute="top" constant="429" id="6it-L3-YMV"/>
+                            <constraint firstItem="EvT-Mu-TnG" firstAttribute="leading" secondItem="0AR-Ju-onr" secondAttribute="leading" id="TdC-Q8-5zE"/>
+                            <constraint firstItem="EvT-Mu-TnG" firstAttribute="centerX" secondItem="gXJ-be-Wky" secondAttribute="centerX" id="qdD-fh-4Ao"/>
+                            <constraint firstItem="0AR-Ju-onr" firstAttribute="bottom" secondItem="yCc-8S-TmG" secondAttribute="bottom" constant="205" id="rld-wP-ynr"/>
+                            <constraint firstItem="EvT-Mu-TnG" firstAttribute="centerY" secondItem="gXJ-be-Wky" secondAttribute="centerY" constant="29.5" id="ubw-w5-ksP"/>
+                            <constraint firstItem="yCc-8S-TmG" firstAttribute="leading" secondItem="0AR-Ju-onr" secondAttribute="leading" constant="51" id="vXe-dj-RVE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fave Movie" image="popcorn" catalog="system" selectedImage="popcorn.fill" id="cHh-u2-9Z8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0UL-rQ-lKr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1741.2213740458014" y="4.9295774647887329"/>
+        </scene>
+        <!--Age-->
+        <scene sceneID="Y43-cd-GX2">
+            <objects>
+                <viewController id="iRd-pX-VR4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBA-tD-cNK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="strong_sads_lament_screenshot" translatesAutoresizingMaskIntoConstraints="NO" id="DAq-wf-fLJ">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am old enough to remember homestar runner sadly" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZ6-uB-Wgc">
+                                <rect key="frame" x="151" y="231" width="195" height="403"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="41"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TUf-u5-EZX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DAq-wf-fLJ" firstAttribute="top" secondItem="fBA-tD-cNK" secondAttribute="topMargin" id="3hF-66-12Y"/>
+                            <constraint firstItem="GZ6-uB-Wgc" firstAttribute="top" secondItem="TUf-u5-EZX" secondAttribute="top" constant="172" id="78t-WQ-AkO"/>
+                            <constraint firstItem="DAq-wf-fLJ" firstAttribute="centerY" secondItem="fBA-tD-cNK" secondAttribute="centerY" constant="29.5" id="RXZ-VV-6ZW"/>
+                            <constraint firstItem="TUf-u5-EZX" firstAttribute="trailing" secondItem="GZ6-uB-Wgc" secondAttribute="trailing" constant="47" id="U93-F2-Uum"/>
+                            <constraint firstItem="TUf-u5-EZX" firstAttribute="bottom" secondItem="GZ6-uB-Wgc" secondAttribute="bottom" constant="135" id="Zpc-7u-VNt"/>
+                            <constraint firstItem="DAq-wf-fLJ" firstAttribute="leading" secondItem="TUf-u5-EZX" secondAttribute="leading" id="bzs-gB-ySo"/>
+                            <constraint firstItem="GZ6-uB-Wgc" firstAttribute="leading" secondItem="TUf-u5-EZX" secondAttribute="leading" constant="151" id="ivc-h6-2hC"/>
+                            <constraint firstItem="DAq-wf-fLJ" firstAttribute="centerX" secondItem="fBA-tD-cNK" secondAttribute="centerX" id="lPG-BX-Ln9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Age" image="person.crop.circle.badge.clock" catalog="system" selectedImage="person.crop.circle.badge.clock.fill" id="9nP-UZ-xnd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PGo-0D-dt6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448.0916030534349" y="4.9295774647887329"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aY2-lp-Nr5">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qJJ-2O-ESY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1rX-ak-SLw">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="YCb-mX-UiP"/>
+                        <segue destination="Yrr-HL-tzS" kind="relationship" relationship="viewControllers" id="3GX-ag-RYG"/>
+                        <segue destination="iRd-pX-VR4" kind="relationship" relationship="viewControllers" id="4H9-PL-wYO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIr-1h-lqu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.832061068702288" y="4.9295774647887329"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Strong_Bads_Website" width="784" height="404"/>
+        <image name="hswebsite" width="451" height="451"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="person.crop.circle.badge.clock" catalog="system" width="128" height="114"/>
+        <image name="person.crop.circle.badge.clock.fill" catalog="system" width="128" height="114"/>
+        <image name="popcorn" catalog="system" width="102" height="128"/>
+        <image name="popcorn.fill" catalog="system" width="102" height="128"/>
+        <image name="strong_sads_lament_screenshot" width="709" height="493"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
